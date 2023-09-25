@@ -4,7 +4,7 @@ const path = require("path");
 const hbs = require("hbs");
 const { partials } = require("handlebars");
 
-const port = 11400;
+const port = process.env.PORT || 11400;
 
 const static_path = path.join(__dirname , "../public");
 
